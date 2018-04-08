@@ -79,7 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    smart<strong>Parker</strong>
+                    <hr>
+                    <small style="font-size: 0.5em;">car parking made <i>easy!</i></small>
                 </div>
 
                 <div class="links">
