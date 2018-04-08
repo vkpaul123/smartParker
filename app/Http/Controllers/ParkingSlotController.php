@@ -15,7 +15,7 @@ class ParkingSlotController extends Controller
     }
 
     public function getLatest() {
-    	$values = Parkingslot::all();
+    	$values = Parkingslot::orderBy('id')->get();
 
     	return response()->json($values);
     }
