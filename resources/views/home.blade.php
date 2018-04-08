@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-info">
+            <div class="panel panel-primary">
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
@@ -19,36 +19,36 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="panel panel-success">
+                                <div class="panel panel-info" id="slot-head-1">
                                     <div class="panel-heading"><h3>1</h3></div>
                                     <div class="panel-body">
-                                        <h3 class="text-success"><strong>Vacant</strong></h3>
+                                        <h3><strong id="slot-body-1">Vacant</strong></h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="panel panel-success">
+                                <div class="panel panel-info" id="slot-head-2">
                                     <div class="panel-heading"><h3>2</h3></div>
                                     <div class="panel-body">
-                                        <h3 class="text-success"><strong>Vacant</strong></h3>
+                                        <h3><strong id="slot-body-2">Vacant</strong></h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="panel panel-success">
+                                <div class="panel panel-info" id="slot-head-3">
                                     <div class="panel-heading"><h3>3</h3></div>
                                     <div class="panel-body">
-                                        <h3 class="text-success"><strong>Vacant</strong></h3>
+                                        <h3><strong id="slot-body-3">Vacant</strong></h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="panel panel-success">
+                                <div class="panel panel-info" id="slot-head-4">
                                     <div class="panel-heading"><h3>4</h3></div>
                                     <div class="panel-body">
-                                        <h3 class="text-success"><strong>Vacant</strong></h3>
+                                        <h3><strong id="slot-body-4">Vacant</strong></h3>
                                     </div>
                                 </div>
                             </div>
@@ -59,4 +59,5 @@
         </div>
     </div>
 </div>
+
 @endsection

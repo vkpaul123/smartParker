@@ -76,5 +76,40 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+          update();
+        });
+
+        function update() {
+            $.ajax({
+                url: '{{ route('get.latest.values') }}',
+                type: 'GET',
+                dataType: 'json',
+                data: {},
+            })
+            .done(function(data) {
+                console.log("success");
+                document.getElementById('slot-body-1').innerHTML = data[0].status;
+                document.getElementById('slot-body-2').innerHTML = data[1].status;
+                document.getElementById('slot-body-3').innerHTML = data[2].status;
+                document.getElementById('slot-body-4').innerHTML = data[3].status;
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+            
+            setTimeout(update, 5000);
+        }
+        
+    </script>
 </body>
 </html>
