@@ -95,6 +95,7 @@
             })
             .done(function(data) {
                 console.log("success");
+                console.log(data);
                 document.getElementById('slot-body-1').innerHTML = data[0].status;
                 document.getElementById('slot-body-2').innerHTML = data[1].status;
                 document.getElementById('slot-body-3').innerHTML = data[2].status;
@@ -107,7 +108,7 @@
                 console.log("complete");
             });
             
-            setTimeout(update, 5000);
+            setTimeout(update, 2500);
         }
         
     </script>
